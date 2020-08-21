@@ -1,0 +1,108 @@
+:root {
+  --light: #ffffff;
+  --sky: #7f9cf5;
+  --purple: #97266d;
+  --dark: #81899b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0;
+}
+
+.theme-switches {
+  display: flex;
+  justify-content: center;
+}
+
+.switch {
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.switch:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+#switch-1 {
+  background-color: var(--light);
+}
+#switch-2 {
+  background-color: var(--sky);
+}
+#switch-3 {
+  background-color: var(--purple);
+}
+#switch-4 {
+  background-color: var(--dark);
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.box img {
+  max-height: 300px;
+  width: auto;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.text {
+  width: 50%;
+}
+
+.text h3 {
+  font-size: 35px;
+  padding: 30px 0;
+  font-weight: 600;
+}
+
+.text p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 25px;
+  }
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box img {
+    max-width: 80vw;
+  }
+  .text {
+    width: 80%;
+  }
+}
